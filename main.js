@@ -67,3 +67,22 @@ function converteDzdToEuro() {
             message.innerHTML = "This Field Can't Be Empty"
         }
 }
+
+var season = prompt("What is the best season for you ?");
+
+switch (season) {
+    case "Winter":
+        alert("Winter is too Cold");    
+        break;
+    case "Summer":
+        alert("Summer is too Hot");    
+        break;
+    case "Spring":
+    case "Autumn":
+        alert("This is an Amazing Season !")
+        break;
+
+    default:
+        alert("You didn't enter a season");
+        break;
+}
