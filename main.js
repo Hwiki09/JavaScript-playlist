@@ -54,7 +54,7 @@ document.getElementById("test2").innerHTML = makeDiscount(500);
         alert("Hello World !");
     })();
 */
-
+ /*
 function converteDzdToEuro() {
 
     "use strict";
@@ -67,7 +67,9 @@ function converteDzdToEuro() {
             message.innerHTML = "This Field Can't Be Empty"
         }
 }
+*/
 
+/*
 var season = prompt("What is the best season for you ?");
 
 switch (season) {
@@ -86,3 +88,36 @@ switch (season) {
         alert("You didn't enter a season");
         break;
 }
+*/
+/*
+var x = 1;  // Global Variable
+function changeXto2() {
+    "use strict";
+     x = 2
+}
+function changeXto3() {
+    "use strict";
+    var x = 3 // Local Variable
+}
+console.log(x);
+changeXto2();
+console.log(x);
+changeXto3();
+console.log(x);
+*/
+var y = 1;
+function testParent() {
+    "use strict";
+    var y = 5;
+
+    function testChild() {
+        var calc = y + 2;
+
+        console.log(calc);
+        console.log(y);
+    }
+    console.log(y);
+    return testChild();
+}
+testParent();
+console.log(y + 2);
