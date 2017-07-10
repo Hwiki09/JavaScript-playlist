@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>*{font-family: consolas; font-size: 15px;}</style>
+    <script> function changeMeOnClick() {
+                document.getElementById("test3").innerHTML = "You Clicked On The Button"
+            }
+            function changeMeOnDblclick() {
+                document.getElementById("test3").innerHTML = "You Double Clicked On The Button"
+            }
+    </script>
 </head>
     <body>
         <!--
@@ -10,9 +18,22 @@
         <div id="test2"> Test</div>
         <button onclick="myAgeInDays(21)"> Click the Function </button><br>
         -->
-        <input type="text" name="Euro">
+        <input type="text" id="Euro">
         <button onclick="converteDzdToEuro()"> Converte </button>
-        <div id="message"></div>
+        <div id="message"></div><br>
+        <!-- Events -->
+        <button onclick="changeMeOnClick()" ondblclick="changeMeOnDblclick()">Chnage Me !</button>
+        <div id="test3"> Javascript </div>
+        <input type="text" id="input">
+        <div id="div"></div><br>
+
+        <input id="input2" type="text">
+        <select id="currency">
+            <option value="19">Dollar</option>
+            <option value="12">Yin</option>
+            <option value="19.5">Euro</option>
+        </select>
+        <div id="div2"></div>
         <script src="main.js"></script>
     </body>
 </html>

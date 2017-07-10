@@ -105,10 +105,12 @@ console.log(x);
 changeXto3();
 console.log(x);
 */
-var y = 1;
+
+/*
+var y = 1; // Global Scope
 function testParent() {
     "use strict";
-    var y = 5;
+    var y = 5; // Locla Scope
 
     function testChild() {
         var calc = y + 2;
@@ -121,3 +123,24 @@ function testParent() {
 }
 testParent();
 console.log(y + 2);
+
+var myInput = document.getElementById("input"),
+    myDiv = document.getElementById("div");
+
+myInput.onkeydown = function () {
+    // myDiv.innerHTML = myInput.value * 19.5 ;
+    alert("Hello");
+    // The KeyDown event is triggered when the user presses a Key.
+    // The KeyUp event is triggered when the user releases a Key.
+    // The KeyPress event is triggered when the user presses & releases a Key. (onKeyDown followed by onKeyUp)
+}
+*/
+
+var myInput2 = document.getElementById("input2"),
+    myDiv2 = document.getElementById("div2"),
+    myCurrency = document.getElementById("currency");
+
+myCurrency.onchange = function () {
+    "use strict";
+    myDiv2.innerHTML = "Worth " + myInput2.value * myCurrency.value + " Dzd";
+};
