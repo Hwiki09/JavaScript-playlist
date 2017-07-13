@@ -54,7 +54,7 @@ document.getElementById("test2").innerHTML = makeDiscount(500);
         alert("Hello World !");
     })();
 */
- /*
+/*
 function converteDzdToEuro() {
 
     "use strict";
@@ -135,10 +135,10 @@ myInput.onkeydown = function () {
     // The KeyPress event is triggered when the user presses & releases a Key. (onKeyDown followed by onKeyUp)
 }
 */
-    var myDivv = document.getElementById("inout");
+var myDivv = document.getElementById("inout");
 myDivv.onmouseover = function () {
-    myDivv.innerHTML = "You Have Gone HAHAHA!";
-}
+	myDivv.innerHTML = "You Have Gone HAHAHA!";
+};
 /* To Reviseeeeeeeeeeeee
 
 var myInput2 = document.getElementById("input2"),
