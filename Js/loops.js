@@ -51,3 +51,29 @@ for (prop in myCar){
 }
 
 console.log(myCar.hasOwnProperty("prop")); // Check wither the property is inside the Object or not ! 
+
+// Advanced For Loop
+
+var p = 0;
+
+for (;;) {
+    if (p > 10) break;
+    console.log(p);
+    p++;
+}
+
+//FIXME: document.write() -> Doesn't Work !!
+
+// function generateYears(Start, End) {
+//     var years;
+
+//     document.write("<select>");
+//     for (years = Start; years < End; years++) {
+
+//         document.write("<option value=\"" + years + "\">" + "</option>")
+//     }
+//     document.write("</select>");
+// }
+    
+// generateYears(1900, 2017);
+
