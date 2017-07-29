@@ -77,3 +77,30 @@ for (;;) {
     
 // generateYears(1900, 2017);
 
+/*
+    While Syntax:
+        while (Condition) {
+            Statement
+        }
+*/
+
+var k = 0;
+
+while (k <= 100) {
+    console.log(k);
+    k += 1;
+}
+
+/*
+    Do While Syntax:
+        Do {
+            Statement
+        } While (Condition)
+*/
+
+var iter = 1;
+
+do {
+    console.log(iter);
+    iter = iter + 2;
+} while (iter < 20)
