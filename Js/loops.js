@@ -104,3 +104,19 @@ do {
     console.log(iter);
     iter = iter + 2;
 } while (iter < 20)
+
+/* Break, Continu & Label */
+
+var x;
+
+MainLoop:
+for (x = 1; x <= 5; x++) {
+
+    ChildLoop: 
+    for (y = 15; y < 20; y++) {
+        if (y === 17) {
+            continue ChildLoop;
+        }
+        console.log(x + " => " + y);
+    }
+}
