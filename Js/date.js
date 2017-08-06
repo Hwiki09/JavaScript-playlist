@@ -1,3 +1,4 @@
+// Date is ZERO INDEX Base
 
 /*
     new Date(): // Print Current Date & time
@@ -38,3 +39,34 @@ var theDate =   new Date("7/25/1998"),
     dt = theDate.getTime();
 
 console.log(dt + " Milliseocnds from 1970");
+
+/*
+    Date Functions:
+        setDate(Day[Req])
+        setFullYear(Year[Req], Month[Opt], Day[Opt])
+        setHours(Hours[Req], Minutes[Opt], Seconds[Opt], Milliseconds[Opt])
+        setMinutes(Minutes[Opt], Seconds[Opt], Milliseconds[Opt])
+        setSeconds(Seconds[Opt], Milliseconds[Opt])
+        setMilliseconds(600000) // Add to the actual time that value
+        setMonth(Month[Req], Day[Opt])
+*/
+
+var mySetDate = new Date();
+mySetDate.setDate(15);
+mySetDate.setMilliseconds(600000);
+console.log(mySetDate);
+
+/*
+    now()
+    parse()
+    toISOString()
+    toDateString()
+    toTimeString()
+*/
+
+var myTimee = new Date(),
+    myISO = myTimee.toDateString(),
+    myISO2 = myTimee.toISOString();
+
+console.log(myISO);
+console.log(myISO2);
