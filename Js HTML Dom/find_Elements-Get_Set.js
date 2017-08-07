@@ -78,3 +78,17 @@ myImg[1].setAttribute('src', "https://www.placehold.it/130/ddd");
 myImg[1].setAttribute('alt', "Set Alternative Text");
 myImg[1].setAttribute('title', "Javascript Title");
 
+// hasAttribute ~ removeAttribute
+
+if (myImg[1].hasAttribute('alt')) {
+
+    if (myImg[1].alt === '') {
+        myImg.setAttribute('alt', 'Default Alternative Text')
+    } else {
+        console.log('The Image Have Alt Attribute');
+    }
+} else {
+    console.log('The Image Do Not Have Alt Attribute')
+}
+
+myImg[0].removeAttribute('alt');  // Remove the Attribute of the 1st Image
