@@ -4,12 +4,13 @@
         [2]- document.getElementsByTagName()
         [3]- document.getElementsByClassName() | Not Compatible with IE8 | Call all Objects with That Class | Don't Forget [Index]
         [4]- document.querySelectorAll() | Not Compatible with IE8 | use the Nesting model | Don't Forget [Index] | querySelectorAll returns non-live elements
+        [5]- document.querySelector | Select Only The First Element
 */
 
-var myElement = document.querySelectorAll('div.test')
-    // document.getElementsByClassName('test'); 
-    // document.getElementsByTagName('p');
-myElement[1].innerHTML = "This text is written with JavaScript";
+// var myElement = document.querySelectorAll('div.test')
+//     // document.getElementsByClassName('test'); 
+//     // document.getElementsByTagName('p');
+// myElement[1].innerHTML = "This text is written with JavaScript";
 
 /*
     Call Elemets 2:
@@ -50,9 +51,30 @@ myElement[1].innerHTML = "This text is written with JavaScript";
     outerText // Not Standard
     innerHTML
     outerHTML
-    textContent
+    textContent 
+
+    // Get HTML Content
+        Element.innerHTML
+    // Get Text Content
+        Elemnt.textContent
 */
 
-var myText = document.querySelector('div');
-myText.textContent = 'This is <span> Text </span>';
-console.log(myText);
+var myText = document.querySelectorAll('div');
+console.log(myText[0].textContent);                // Get Text Content
+console.log(myText[1].innerHTML);                  // Get HTML Content
+
+// Element.Attribute = Direct Method | Create the Attributes if it doesn't exist
+// setAttrbute('Attribute Name', 'Value'), getAttribute("Attribute Name")
+
+var myImg = document.querySelectorAll('img');
+myImg[0].src = "https://www.placehold.it/150/fgh/fff";
+// myImage.src -> Display the Source Link
+myImg[0].alt = "Image";
+myImg[0].title = "Title by JavaScript";
+myImg[0].className = "ImgClass";
+myImg[0].id = "imgId";
+
+myImg[1].setAttribute('src', "https://www.placehold.it/130/ddd");
+myImg[1].setAttribute('alt', "Set Alternative Text");
+myImg[1].setAttribute('title', "Javascript Title");
+
