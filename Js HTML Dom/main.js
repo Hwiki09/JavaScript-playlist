@@ -11,3 +11,23 @@ var myElement = document.querySelectorAll('div.test')
     // document.getElementsByTagName('p');
 myElement[1].innerHTML = "This text is written with JavaScript";
 
+/*
+    Call Elemets 2:
+        [1]- document.title
+        [2]- document.images
+        [3]- document.form
+*/
+
+var myTitle = document.getElementById("title");
+myTitle.innerHTML = document.title; // Wihtout ()
+
+var myDiv = document.getElementById('show'),
+    i;
+
+for (i = 0; i < document.images.length; i+= 1) {
+    document.write(document.images[i].src + '<br>'); // Iterating images source in the myDiv Tag
+}
+
+var myForm = document.getElementById('show2');
+// myForm.innerHTML = document.forms[0].x2.type;
+myForm.innerHTML = document.forms[1].z1.value; // Even it's a password we can show it !
