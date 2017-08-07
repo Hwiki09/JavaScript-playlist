@@ -3,7 +3,7 @@
         [1]- document.getElementById()
         [2]- document.getElementsByTagName()
         [3]- document.getElementsByClassName() | Not Compatible with IE8 | Call all Objects with That Class | Don't Forget [Index]
-        [4]- document.querySelectorAll() | Not Compatible with IE8 | use the Nesting model | Don't Forget [Index]
+        [4]- document.querySelectorAll() | Not Compatible with IE8 | use the Nesting model | Don't Forget [Index] | querySelectorAll returns non-live elements
 */
 
 var myElement = document.querySelectorAll('div.test')
@@ -39,3 +39,20 @@ myElement[1].innerHTML = "This text is written with JavaScript";
 // var myLinks = document.getElementById('show4');
 // // myLinks.innerHTML = document.links.length; // Shows Only Links
 // myLinks.innerHTML = document.anchors.length; // Shows Only Anchor Tag
+
+
+        // Get-Set Elements // Get-Set Elements // Get-Set Elements // Get-Set Elements // Get-Set Elements
+
+            // setAttribute Create it if it doesn't exist
+
+/*
+    innerText // Not Standard
+    outerText // Not Standard
+    innerHTML
+    outerHTML
+    textContent
+*/
+
+var myText = document.querySelector('div');
+myText.textContent = 'This is <span> Text </span>';
+console.log(myText);
