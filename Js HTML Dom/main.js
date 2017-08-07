@@ -16,6 +16,7 @@ myElement[1].innerHTML = "This text is written with JavaScript";
         [1]- document.title
         [2]- document.images
         [3]- document.form
+        [4]- dicument.body
 */
 
 var myTitle = document.getElementById("title");
@@ -31,3 +32,10 @@ for (i = 0; i < document.images.length; i+= 1) {
 var myForm = document.getElementById('show2');
 // myForm.innerHTML = document.forms[0].x2.type;
 myForm.innerHTML = document.forms[1].z1.value; // Even it's a password we can show it !
+
+var myBody = document.getElementById('show3');
+myBody.innerHTML = document.body.innerText; // Or InnerHTML
+
+var myLinks = document.getElementById('show4');
+// myLinks.innerHTML = document.links.length; // Shows Only Links
+myLinks.innerHTML = document.anchors.length; // Shows Only Anchor Tag
