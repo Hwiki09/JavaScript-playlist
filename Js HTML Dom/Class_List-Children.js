@@ -31,7 +31,10 @@ myButton.onclick = function () {
 
         [first/last]Child: Shows Elements, Comments & Text
         [fisrt/last]elementChild: Shows Only Elements  | #IMPORTANT Or We Can Access to any Element by 'childNodes[index]'
+
+        appendChild: Add an Element inside an Other
 */
+
 
 var myMainDiv = document.getElementById('main');
 console.log(myMainDiv.children, myMainDiv.children.length);
@@ -45,3 +48,8 @@ console.log(myMainDiv.firstElementChild);
 console.log(myMainDiv.lastChild);
 console.log(myMainDiv.lastElementChild);
 
+var myNewP = document.createElement('p'), // Create a New Element
+    myNewText = document.createTextNode('Hello from JavaScript !'); // Create a New Text
+
+myNewP.appendChild(myNewText); // Add The Text To The Paragraph
+myMainDiv.appendChild(myNewP); // Add The Paragraph To The Main Div 
