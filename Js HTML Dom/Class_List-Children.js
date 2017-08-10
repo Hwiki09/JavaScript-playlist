@@ -28,6 +28,9 @@ myButton.onclick = function () {
         childElementCount: Predifinied Function To Count Elements (We Can Use Children.length) 
         Children: Show Only Elements
         ChildNodes: Show Elements, Comments & Text
+
+        [first/last]Child: Shows Elements, Comments & Text
+        [fisrt/last]elementChild: Shows Only Elements  | #IMPORTANT Or We Can Access to any Element by 'childNodes[index]'
 */
 
 var myMainDiv = document.getElementById('main');
@@ -36,3 +39,9 @@ console.log(myMainDiv.childNodes ,myMainDiv.childNodes.length);
 console.log(myMainDiv.children[0]); // Show the first element
 console.log(myMainDiv.childNodes[0]); // Show the first Text
 console.log(myMainDiv.childElementCount);
+
+console.log(myMainDiv.firstChild);
+console.log(myMainDiv.firstElementChild);
+console.log(myMainDiv.lastChild);
+console.log(myMainDiv.lastElementChild);
+
