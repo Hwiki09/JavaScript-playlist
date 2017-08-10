@@ -21,3 +21,18 @@ myButton.onclick = function () {
     myHiddenText.classList.toggle('show'); // If it Exist Delete it, Wether Create it !
     myHiddenText.classList.add('Classs');  // Add a Class 
 }
+
+
+/*
+    Children Elements:
+        childElementCount: Predifinied Function To Count Elements (We Can Use Children.length) 
+        Children: Show Only Elements
+        ChildNodes: Show Elements, Comments & Text
+*/
+
+var myMainDiv = document.getElementById('main');
+console.log(myMainDiv.children, myMainDiv.children.length);
+console.log(myMainDiv.childNodes ,myMainDiv.childNodes.length);
+console.log(myMainDiv.children[0]); // Show the first element
+console.log(myMainDiv.childNodes[0]); // Show the first Text
+console.log(myMainDiv.childElementCount);
