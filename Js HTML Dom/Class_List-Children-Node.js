@@ -37,6 +37,14 @@ myButton.onclick = function () {
         insertBefore(Element to Append, Placement of the Element)
 
         removeChild: Remove Elements, Comments & Text !
+
+        tagName: Show Only The Name of The Elements
+        nodeName: Show The Name even it's a Comment, Text Or an Element 
+        nodeValue: Get The Value Of The Node
+        nodeType: 
+            [3]: Text
+            [2]: Element
+
 */
 
 
@@ -64,3 +72,17 @@ myMainDiv.insertBefore(myNewText2, myMainDiv.childNodes[5]); // Appent myNewText
 
 console.log(myMainDiv.childNodes);  // Print All The Elements That The Main Div Contains
 myMainDiv.removeChild(myMainDiv.childNodes[6]); //  Remove The 5th Text  
+
+console.log(myMainDiv.childNodes[0].nodeName);  // Text
+console.log(myMainDiv.childNodes[0].tagName);   // Undifinied
+
+console.log(myMainDiv.childNodes[1].childNodes[1]); // Node inside a Node
+console.log(myMainDiv.childNodes[0].nodeValue);     // Get the Value of the Text
+console.log(myMainDiv.childNodes[0].nodeType);  // 3 Stands For TEXT
+console.log(myMainDiv.childNodes[1].nodeType);  // 1 Stands For ELEMENT
+console.log(myMainDiv.childNodes[3].nodeType);  // 8 Stands For COMMENT
+console.log(myMainDiv.childNodes);
+
+
+
+
