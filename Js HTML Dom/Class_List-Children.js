@@ -33,6 +33,8 @@ myButton.onclick = function () {
         [fisrt/last]elementChild: Shows Only Elements  | #IMPORTANT Or We Can Access to any Element by 'childNodes[index]'
 
         appendChild: Add an Element inside an Other
+
+        insertBefore(Element to Append, Placement of the Element)
 */
 
 
@@ -49,7 +51,10 @@ console.log(myMainDiv.lastChild);
 console.log(myMainDiv.lastElementChild);
 
 var myNewP = document.createElement('p'), // Create a New Element
-    myNewText = document.createTextNode('Hello from JavaScript !'); // Create a New Text
+    myNewText = document.createTextNode('Hello from JavaScript !'), // Create a New Text
+    myNewText2 = document.createTextNode('I\'m After the Comment Hahah !');
 
 myNewP.appendChild(myNewText); // Add The Text To The Paragraph
 myMainDiv.appendChild(myNewP); // Add The Paragraph To The Main Div 
+
+myMainDiv.insertBefore(myNewText2, myMainDiv.childNodes[5]); // Appent myNewText2 Element After The Comment !
