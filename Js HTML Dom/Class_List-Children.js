@@ -35,12 +35,14 @@ myButton.onclick = function () {
         appendChild: Add an Element inside an Other
 
         insertBefore(Element to Append, Placement of the Element)
+
+        removeChild: Remove Elements, Comments & Text !
 */
 
 
 var myMainDiv = document.getElementById('main');
 console.log(myMainDiv.children, myMainDiv.children.length);
-console.log(myMainDiv.childNodes ,myMainDiv.childNodes.length);
+console.log(myMainDiv.childNodes, myMainDiv.childNodes.length);
 console.log(myMainDiv.children[0]); // Show the first element
 console.log(myMainDiv.childNodes[0]); // Show the first Text
 console.log(myMainDiv.childElementCount);
@@ -58,3 +60,7 @@ myNewP.appendChild(myNewText); // Add The Text To The Paragraph
 myMainDiv.appendChild(myNewP); // Add The Paragraph To The Main Div 
 
 myMainDiv.insertBefore(myNewText2, myMainDiv.childNodes[5]); // Appent myNewText2 Element After The Comment !
+
+
+console.log(myMainDiv.childNodes);  // Print All The Elements That The Main Div Contains
+myMainDiv.removeChild(myMainDiv.childNodes[6]); //  Remove The 5th Text  
