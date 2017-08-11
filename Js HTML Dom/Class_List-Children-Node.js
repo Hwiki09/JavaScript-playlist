@@ -44,6 +44,7 @@ myButton.onclick = function () {
         nodeType: 
             [3]: Text
             [2]: Element
+            [8]: Comment
 
 */
 
@@ -83,6 +84,11 @@ console.log(myMainDiv.childNodes[1].nodeType);  // 1 Stands For ELEMENT
 console.log(myMainDiv.childNodes[3].nodeType);  // 8 Stands For COMMENT
 console.log(myMainDiv.childNodes);
 
+console.log(myNewP.parentElement);
 
+var myMainDiv2 = document.getElementById('main2'),
+    myCopy = myMainDiv.childNodes[0].cloneNode(true);
+myMainDiv2.appendChild(myCopy);
+console.log(myMainDiv2);
 
 

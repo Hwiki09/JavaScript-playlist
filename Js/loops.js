@@ -107,7 +107,8 @@ do {
 
 /* Break, Continu & Label */
 
-var x;
+var x,
+    y;
 
 MainLoop:
 for (x = 1; x <= 5; x++) {
