@@ -30,6 +30,10 @@
         Viewable Area
         Inculdes Padding + Scroll + Border
         No Margin
+
+    Scroll Top/Left
+        scrollLeft
+        scrollTop
 */
 
 // Siblings
@@ -89,3 +93,12 @@ console.log(myMainDiv2.scrollWidth + "px" + " Scroll");
 console.log(myMainDiv2.offsetHeight + "px" + " Offset"); // Inludes Border & Scroll
 console.log(myMainDiv2.offsetWidth + "px" + " Offset");
 
+// Scroll Top/Left
+var myScroll = document.getElementById('scroll');
+myScroll.onclick = function () {
+    document.body.scrollTop += 100;
+    console.log(document.body.scrollTop);
+    if (document.body.scrollTop == 1000) {
+        document.getElementById("hiddenDiv").classList.toggle("hidden");
+    }
+}

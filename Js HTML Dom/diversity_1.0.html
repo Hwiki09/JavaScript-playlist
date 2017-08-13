@@ -7,6 +7,10 @@
         * {
             font-family: Consolas;
         }
+        body {
+            width: 4000px;
+            height: 4000px;
+        }
         .custom {
             width: 550px;
             height: 550px;
@@ -21,6 +25,17 @@
             width: 800px;
             height: 800px;
             background-color: magenta;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+        .active {
+            background-color: yellowgreen;
+        }
+        .fixed {
+            position: fixed;
+            top: 0px;
+            right: 0px; 
         }
     </style>
 </head>
@@ -61,6 +76,10 @@
         </div>
     </div>
 
+    <div id="hiddenDiv" class="hidden active">
+        I Was Hidden Hahaha!
+    </div>
+    <button class="fixed" id="scroll"> Scroll 100px Down</button>
     <script src="diversity_1.0.js"></script>
 </body>
 </html>
