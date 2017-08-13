@@ -25,6 +25,11 @@
         No Margin
         No Border
         No Scroll
+
+    Offset Height/Width:
+        Viewable Area
+        Inculdes Padding + Scroll + Border
+        No Margin
 */
 
 // Siblings
@@ -73,9 +78,14 @@ if (myContainer.contains(mychild)) {
 
 // Client Height/Width
 var myMainDiv2 = document.getElementById("main2");
-console.log(myMainDiv2.clientHeight + "px");
-console.log(myMainDiv2.clientWidth + "px");
+console.log(myMainDiv2.clientHeight + "px" + " Client");
+console.log(myMainDiv2.clientWidth + "px" + " Client");
 
 // Scroll Height/Width
-console.log(myMainDiv2.scrollHeight + "px");
-console.log(myMainDiv2.scrollWidth + "px");
+console.log(myMainDiv2.scrollHeight + "px" + " Scroll"); // Scroll takes 17px and the Scroll Function doesn't Includ it
+console.log(myMainDiv2.scrollWidth + "px" + " Scroll");
+
+// Offset Height/Width
+console.log(myMainDiv2.offsetHeight + "px" + " Offset"); // Inludes Border & Scroll
+console.log(myMainDiv2.offsetWidth + "px" + " Offset");
+
