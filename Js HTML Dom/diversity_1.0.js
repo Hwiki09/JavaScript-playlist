@@ -7,6 +7,8 @@
     Blur: Place The Cursor Outside The Inserting Field
 
     Click
+
+    addEventListener('action', function())
 */
 
 var myMainDiv = document.getElementById("main");
@@ -28,4 +30,16 @@ window.onload = function () {
     setTimeout(function() {
         document.getElementById('click').click();
     }, 2000);   // Wait 2 seconds before clicking the Button
+}
+
+var eatButton = document.getElementById("monster"),
+    powerUpButton = document.getElementById("power");
+
+eatButton.onclick = function () {
+    document.getElementById("monster1").style.display = "none"; // When eatButton is clicked hide Monster 1
+}
+powerUpButton.onclick = function () {
+    eatButton.addEventListener('click', function () {
+        document.getElementById("monster2").style.display = "none";  // When eatButton is clicked after clicking powerUp Button hide the 2 Monsters      
+    })
 }
