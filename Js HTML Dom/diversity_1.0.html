@@ -8,12 +8,19 @@
             font-family: Consolas;
         }
         .custom {
+            width: 550px;
+            height: 550px;
             padding: 20px;
             margin: 100px;
             background-color: #DDD;
             border: 10px solid #CCC;
-            text-align: center;
+            text-align: left;
             overflow: scroll;
+        }
+        .main2_child {
+            width: 800px;
+            height: 800px;
+            background-color: magenta;
         }
     </style>
 </head>
@@ -49,7 +56,9 @@
 
     <!-- Client Height/Weight -->
     <div class="custom" id="main2">
-        Cleint Make on Considiration Only Padding and the Real Area
+        <div class="main2_child">
+                Cleint Make on Considiration Only Padding and the Real Area                
+        </div>
     </div>
 
     <script src="diversity_1.0.js"></script>

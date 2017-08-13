@@ -13,7 +13,14 @@
     Contains() function
 
     Client Height/Width:
-        Wiewable Area
+        Viewable Area
+        Inculdes Padding
+        No Margin
+        No Border
+        No Scroll
+
+    Scroll Height/Width:
+        Viewable Area + Hidden Area
         Inculdes Padding
         No Margin
         No Border
@@ -66,5 +73,9 @@ if (myContainer.contains(mychild)) {
 
 // Client Height/Width
 var myMainDiv2 = document.getElementById("main2");
-console.log(myMainDiv2.clientHeight);
-console.log(myMainDiv2.clientWidth);
+console.log(myMainDiv2.clientHeight + "px");
+console.log(myMainDiv2.clientWidth + "px");
+
+// Scroll Height/Width
+console.log(myMainDiv2.scrollHeight + "px");
+console.log(myMainDiv2.scrollWidth + "px");
