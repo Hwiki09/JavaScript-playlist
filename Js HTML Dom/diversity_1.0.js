@@ -5,6 +5,8 @@
 
     Focus: Place The Cursor inside The Inserting Field
     Blur: Place The Cursor Outside The Inserting Field
+
+    Click
 */
 
 var myMainDiv = document.getElementById("main");
@@ -17,4 +19,13 @@ window.onload = function () {
 }
 document.querySelector('button').onclick = function () {
     document.getElementById('myInput').blur();
+}
+
+document.getElementById('click').onclick = function () {
+    this.style.display = 'none';
+}
+window.onload = function () {
+    setTimeout(function() {
+        document.getElementById('click').click();
+    }, 2000);   // Wait 2 seconds before clicking the Button
 }
