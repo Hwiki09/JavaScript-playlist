@@ -32,7 +32,7 @@
         No Margin
 
     Scroll Top/Left
-        scrollLeft
+        scrollLeft: Calculates Margin size + scroll 
         scrollTop
 */
 
@@ -102,3 +102,7 @@ myScroll.onclick = function () {
         document.getElementById("hiddenDiv").classList.toggle("hidden");
     }
 }
+
+// Client Left/Top
+console.log("Left Border: " + myMainDiv2.clientLeft + "px"); // Calculates Margin size + Scroll
+console.log("Top Border: " + myMainDiv2.clientTop + "px");
