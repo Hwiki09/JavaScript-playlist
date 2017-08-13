@@ -46,6 +46,8 @@ myButton.onclick = function () {
             [2]: Element
             [8]: Comment
 
+        cloneNode: Clone It To Another Element After That Insert Where It Should Be
+
 */
 
 
@@ -91,4 +93,9 @@ var myMainDiv2 = document.getElementById('main2'),
 myMainDiv2.appendChild(myCopy);
 console.log(myMainDiv2);
 
-
+if (myMainDiv.parentNode.tagName === 'BODY') {
+    console.log("This Element Has No Parent Element");
+}
+myButton.onclick = function () {
+    myButton.parentNode.style.backgroundColor = 'red';
+}
