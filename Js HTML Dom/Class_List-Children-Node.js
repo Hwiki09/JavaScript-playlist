@@ -48,6 +48,9 @@ myButton.onclick = function () {
 
         cloneNode: Clone It To Another Element After That Insert Where It Should Be
 
+        parentNode
+        parentElement
+
 */
 
 
