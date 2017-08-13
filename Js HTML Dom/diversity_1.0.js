@@ -9,6 +9,8 @@
     Click
 
     addEventListener('action', function())
+
+    Contains function
 */
 
 var myMainDiv = document.getElementById("main");
@@ -42,4 +44,10 @@ powerUpButton.onclick = function () {
     eatButton.addEventListener('click', function () {
         document.getElementById("monster2").style.display = "none";  // When eatButton is clicked after clicking powerUp Button hide the 2 Monsters      
     })
+}
+
+var myContainer = document.getElementById("contains"),
+    mychild = document.getElementById("myChild");
+if (myContainer.contains(mychild)) {
+    console.log("We're Good !")
 }
