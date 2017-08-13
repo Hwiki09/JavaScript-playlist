@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Diversity 1.0</title>
+    <style>
+        * {
+            font-family: Consolas;
+        }
+        .custom {
+            padding: 20px;
+            margin: 100px;
+            background-color: #DDD;
+            border: 10px solid #CCC;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Siblings  -->
     <div id="main">
         This is A Text
         <p>This is a Paragraph</p>
@@ -12,6 +26,7 @@
         <span>This is a Span</span>
     </div>
 
+    <!-- Focus/Blur -->
     <form>
         <input type="text" id="myInput">
     </form>
@@ -26,8 +41,14 @@
     <div id="monster1">Monster 1</div>
     <div id="monster2">Monster 2</div>
 
+    <!-- Contains Function -->
     <div id="contains">
         <p>Hello<span id="myChild">World!</span></p>
+    </div>
+
+    <!-- Client Height/Weight -->
+    <div class="custom" id="main2">
+        Cleint Make on Considiration Only Padding and the Real Area
     </div>
 
     <script src="diversity_1.0.js"></script>

@@ -10,14 +10,23 @@
 
     addEventListener('action', function())
 
-    Contains function
+    Contains() function
+
+    Client Height/Width:
+        Wiewable Area
+        Inculdes Padding
+        No Margin
+        No Border
+        No Scroll
 */
 
+// Siblings
 var myMainDiv = document.getElementById("main");
 console.log(myMainDiv.childNodes[1].nextSibling);
 console.log(myMainDiv.childNodes[1].nextElementSibling);
 console.log(myMainDiv.childNodes[2].previousSibling.textContent = 'This Text Was Changed By JavaScript');
 
+// Focus & Blur
 window.onload = function () {
     document.getElementById('myInput').focus();
 }
@@ -25,6 +34,7 @@ document.querySelector('button').onclick = function () {
     document.getElementById('myInput').blur();
 }
 
+// Click Fucntion
 document.getElementById('click').onclick = function () {
     this.style.display = 'none';
 }
@@ -34,6 +44,7 @@ window.onload = function () {
     }, 2000);   // Wait 2 seconds before clicking the Button
 }
 
+//  addEventListener('action', function())
 var eatButton = document.getElementById("monster"),
     powerUpButton = document.getElementById("power");
 
@@ -46,8 +57,14 @@ powerUpButton.onclick = function () {
     })
 }
 
+// Contains()
 var myContainer = document.getElementById("contains"),
     mychild = document.getElementById("myChild");
 if (myContainer.contains(mychild)) {
     console.log("We're Good !")
 }
+
+// Client Height/Width
+var myMainDiv2 = document.getElementById("main2");
+console.log(myMainDiv2.clientHeight);
+console.log(myMainDiv2.clientWidth);
